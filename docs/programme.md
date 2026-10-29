@@ -1,98 +1,125 @@
-# Programme d'informatique en CPGE
+# Programme d'informatique — CPGE scientifiques (Maroc)
 
-> **Ressources pédagogiques — MPSI, MP et PSI**  
-> Auteur : Mazza Azzouz  
-> Ce document est une **synthèse pédagogique adaptable** : pour la liste exhaustive des notions exigibles, consulter le programme officiel de la filière et de l'année concernées.
+> **Documents de référence transmis :** programmes et progressions de juillet 2022, Ministère de l'Éducation nationale, du Préscolaire et des Sports — Centre National de l'Innovation Pédagogique et de l'Expérimentation.
+>
+> Ce document est une **synthèse pédagogique** des quatre PDF fournis, et non une reproduction réglementaire. Pour les exigences détaillées, consulter les documents sources. Les appellations « programme officiel » (première année) et « progression 2022-2023 » (deuxième année) sont conservées telles qu'elles apparaissent dans les PDF.
 
-[← Accueil](../README.md) · [Progression pédagogique](progression-pedagogique.md)
+## Navigation
 
-## Objectifs de formation
+- [Première année — MPSI, PCSI et TSI 1](#première-année--mpsi-pcsi-et-tsi-1)
+- [Deuxième année — MP et PSI](#deuxième-année--mp-et-psi)
+- [Deuxième année — TSI 2](#deuxième-année--tsi-2)
+- [Points particuliers et limites](#points-particuliers-et-limites)
+- [Progression par mois](progression-pedagogique.md)
 
-À l'issue du parcours, l'étudiant doit être capable de :
+## Première année — MPSI, PCSI et TSI 1
 
-- analyser un problème, proposer un algorithme et le traduire en Python ;
-- choisir des structures de données adaptées ;
-- justifier la correction et la terminaison d'un algorithme ;
-- estimer et comparer des complexités ;
-- expérimenter, tester, documenter et interpréter des résultats numériques ;
-- mobiliser l'informatique pour résoudre des problèmes scientifiques.
+Les deux documents transmis pour **MPSI/PCSI** et **TSI première année** décrivent les mêmes grandes rubriques et le même ordre mensuel.
 
-## Première année — Fondamentaux
+### 1. Représentation de l'information
+- Entiers en bases 2 et 16 ; conversion entre bases.
+- Entiers signés : binaire signé, complément à deux.
+- Nombres réels : virgule fixe et flottante, simple et double précision.
 
-### 1. Architecture et représentation de l'information
-- Architecture élémentaire d'un ordinateur ; mémoire et représentation des données.
-- Codage des entiers, des nombres réels et notions de précision numérique.
-- Exercices sur les conversions et les limites de représentation.
+### 2. Initiation à Python et algorithmique
+- Programme, variables, types, affectation, commentaires.
+- Entrées/sorties `input`, `print`, `eval` ; opérations arithmétiques.
+- Conditions `if`, `elif`, `else`, opérateurs de comparaison et logiques ; indentation.
+- Boucles `for`, `while`, boucles imbriquées ; `break`, `continue`.
+- Fonctions, modules, `return`, portée des variables, assertions, récursivité simple.
+- Terminaison et correction : variants, invariants, récurrence/induction structurelle.
 
-### 2. Programmation Python
-- Variables, types, affectation, expressions et opérateurs.
-- Entrées et sorties ; instructions conditionnelles.
-- Boucles `for` et `while` ; invariants simples.
-- Fonctions, paramètres, portée et valeurs de retour.
-- Chaînes, listes, tuples et dictionnaires selon les objectifs de la filière.
-- Tests, débogage et bonnes pratiques de programmation.
+### 3. Collections et algorithmique élémentaire
+- Listes : création, parcours, copie, tranches, `append`, `pop`, `insert`.
+- Recherche séquentielle et dichotomique.
+- Tri par sélection, tri à bulles, tri par insertion, tri par comptage.
+- Chaînes de caractères et distinction mutable / non mutable.
+- Dictionnaires, tuples, ensembles ; piles et files, notamment `collections.deque`.
 
-### 3. Algorithmique et raisonnement
-- Recherche séquentielle ; parcours de collections.
-- Récursivité : cas de base, appels récursifs et exemples usuels.
-- Correction, terminaison et introduction aux invariants.
-- Notions de coût algorithmique et d'efficacité.
+### 4. Fichiers et calcul scientifique
+- Fichiers texte : ouverture, lecture, écriture.
+- Bibliothèques `numpy`, `scipy` et `matplotlib.pyplot`.
+- Images : affichage, inversion, niveaux de gris, transformations, histogramme, seuillage, flou, détection de contours (initiation).
+- Méthodes numériques : dichotomie, Newton ; intégration par rectangles et trapèzes, méthodes composites ; Euler et équations différentielles ordinaires (EDO), y compris systèmes et équations d'ordre supérieur ramenés à un problème de Cauchy.
 
-### 4. Structures de données et fichiers
-- Manipulation des types de données composés.
-- Piles et files ; représentations et opérations fondamentales.
-- Lecture et écriture de fichiers ; exploitation simple de données.
+## Deuxième année — MP et PSI
 
-### 5. Calcul scientifique et applications
-- Utilisation raisonnée de bibliothèques mathématiques.
-- Introduction à l'analyse numérique et aux erreurs d'approximation.
-- Applications pédagogiques : traitement élémentaire d'images et simulations numériques, selon le programme.
+### 1. Analyse d'algorithmes et tris
+- Coûts temporels, notation `O`, ordre de grandeur, pire cas ; complexité récursive et introduction à la complexité spatiale.
+- Révision des tris de première année ; tri fusion et tri rapide ; comparaison des coûts.
 
-## Deuxième année — Approfondissements
+### 2. Arbres binaires
+- Vocabulaire, représentation par listes, hauteur et profondeur.
+- Parcours en largeur et profondeur (préfixe, infixe, suffixe).
+- Tas min/max et arbres binaires de recherche : recherche, insertion, suppression.
 
-> **À ajuster selon MP ou PSI et selon le programme officiel applicable.** Les rubriques ci-dessous servent à organiser les ressources du dépôt ; elles ne constituent pas une liste réglementaire exhaustive.
+### 3. Stratégies algorithmiques
+- Algorithmes gloutons et contre-exemples à l'optimalité ; rendu de monnaie, affectation de salles, sélection d'activités, sac à dos.
+- Programmation dynamique : approche ascendante (*bottom-up*), descendante (*top-down*) et mémoïsation ; comparaison avec l'approche gloutonne.
+- Applications : ordonnancement, plus longue sous-chaîne commune, distance de Levenshtein, sac à dos.
+- Notion d'heuristique et recuit simulé ; exemples de voyageur de commerce et de sac à dos.
 
-### 6. Analyse des algorithmes
-- Complexité temporelle et spatiale.
-- Recherche, tris et récursivité ; comparaisons expérimentales.
-- Preuves de correction et méthodes de résolution de problèmes.
+### 4. Graphes
+- Graphes orientés / non orientés, degrés, chemins, cycles, connexité, eulérien, hamiltonien.
+- Listes et matrices d'adjacence ; parcours BFS/DFS, `collections.deque`.
+- Graphes pondérés, Dijkstra (poids positifs).
+- Applications mentionnées : cycles, connexité, A*, coloration et Floyd-Warshall.
 
-### 7. Graphes et algorithmes associés
-- Vocabulaire : sommets, arêtes, arcs, chemins, cycles et connexité.
-- Représentations : matrices et listes d'adjacence.
-- Parcours en largeur (BFS) et en profondeur (DFS).
-- Plus courts chemins : Dijkstra et Bellman–Ford, lorsque ces notions sont prévues dans l'enseignement concerné.
+### 5. Images, intelligence artificielle et calcul scientifique
+- Traitement d'images élémentaire avec Matplotlib.
+- Classification supervisée : *k*-plus proches voisins (kNN), matrice de confusion.
+- Partitionnement non supervisé : *k*-moyennes (k-means).
+- EDO et problème de Cauchy, influence du pas de résolution.
 
-### 8. Données, probabilités et simulation
-- Exploitation de jeux de données et simulations.
-- Estimation expérimentale et méthodes de Monte-Carlo.
-- Chaînes de Markov et applications, selon la filière et les activités retenues.
+### 6. Bases de données relationnelles et SQL (SQLite)
+- Tables, colonnes, lignes, domaines, schéma, entité-association, cardinalités, clés primaires/étrangères.
+- Insertion, modification, suppression ; `SELECT`, `WHERE`, `AS`, `DISTINCT`, `LIMIT`, `OFFSET`, `ORDER BY`.
+- Opérations ensemblistes `UNION`, `INTERSECT`, `EXCEPT` ; produit cartésien, jointures internes (équi-jointures).
+- Agrégations `MIN`, `MAX`, `SUM`, `AVG`, `COUNT`, `GROUP BY`, `HAVING` ; requêtes imbriquées.
+- Révision et préparation aux concours (CNC).
 
-### 9. Bases de données (si prévues dans le cursus)
-- Modèle relationnel et interrogation par SQL.
-- Requêtes de sélection, projection, jointure et agrégation.
+## Deuxième année — TSI 2
 
-## Modalités pédagogiques
+### 1. Analyse d'algorithmes, tris et arbres
+- Complexité des algorithmes itératifs et récursifs, notation `O`, complexité spatiale élémentaire.
+- Tri fusion et tri rapide ; comparaison avec les tris de première année.
+- Arbres binaires, parcours, tas min/max, arbres binaires de recherche.
 
-Chaque thème peut comprendre :
+### 2. Graphes
+- Représentations par listes ou matrices d'adjacence ; BFS et DFS.
+- Graphes pondérés ; Dijkstra avec poids positifs.
+- Applications : détection de cycles, connexité, A*, coloration, Floyd-Warshall.
 
-1. un **cours** synthétique illustré d'exemples ;
-2. un **TD** d'exercices progressifs ;
-3. un **TP Python/Jupyter** avec tests et expérimentations ;
-4. une **évaluation formative** puis, si nécessaire, un devoir surveillé ;
-5. un **corrigé commenté** publié selon le calendrier de l'enseignant.
+### 3. Images et intelligence artificielle
+- Manipulations élémentaires d'images (Matplotlib).
+- Classification kNN et matrice de confusion ; partitionnement k-means.
 
-## Organisation des ressources
+### 4. Calcul scientifique
+- Méthode de Gauss : systèmes linéaires inversibles, opérations élémentaires, pivot partiel, inverse et déterminant.
+- EDO : équations d'ordre 1, réduction d'un système ou d'une équation d'ordre supérieur au problème de Cauchy ; influence du pas.
+- Interpolation polynomiale de Lagrange, y compris par morceaux.
 
-- `cours/` : supports PDF et sources LaTeX ;
-- `td/` : exercices ;
-- `tp/` : notebooks et scripts Python ;
-- `ds/` : sujets et corrigés ;
-- `supports/` : diapositives et animations.
+### 5. Bases de données relationnelles (SQLite)
+- Modèle relationnel, clés, cardinalités et modèle entité-association.
+- Manipulation de lignes, requêtes `SELECT`, filtres, tris, limites.
+- Opérateurs `UNION`, `INTERSECT`, `EXCEPT` ; jointures internes et produit cartésien.
+- Agrégations et requêtes imbriquées.
+- Révision et préparation aux concours (CNC).
 
-## Références institutionnelles
+## Points particuliers et limites
 
-- [Portail officiel e-CPGE Maroc — Programmes des filières](https://cpge.men.gov.ma/CPGEPages/Cont/DocPedag.aspx)
-- [Programme de première année MPSI — CPGE Maroc (PDF)](https://www.cpge.ac.ma/documents/Docs/_PrgFil/10-scr-1e-mpsi-.pdf)
+- **MPSI/PCSI et TSI 1 :** les fichiers binaires sont indiqués *hors programme*.
+- **MP/PSI et TSI 2 :** arbres n-aires et tri par tas sont indiqués *hors programme* ; cela n'exclut pas les tas comme structures de données.
+- **MP/PSI et TSI 2 :** pour SQLite, création/modification/suppression des tables et récupération d'une requête SQL depuis Python sont indiquées *hors programme*.
+- **MP/PSI :** glouton, programmation dynamique et recuit simulé sont prévus dans la progression transmise ; ils ne figurent pas dans le document TSI 2 transmis.
+- **TSI 2 :** méthode de Gauss et interpolation de Lagrange sont explicitement programmées ; MP/PSI présente ces méthodes comme des thèmes possibles de révision en fin d'année, et non comme des séquences équivalentes dans sa progression mensuelle.
+- **Compléments pédagogiques :** tout sujet ajouté ultérieurement (par exemple Bellman–Ford) doit être clairement identifié comme *approfondissement*, sauf mention explicite dans les documents de référence.
 
-**Note :** avant la publication définitive d'un cours, vérifier sa correspondance avec le niveau, la filière et la version en vigueur du programme.
+## Sources PDF à conserver dans le dépôt (si vous disposez du droit de diffusion)
+
+1. `MPSI-PCSI.pdf` — *Programme officiel d'informatique*, juillet 2022.
+2. `TSI 1.pdf` — *Programme officiel d'informatique*, juillet 2022.
+3. `MP-PSI.pdf` — *Progression 2022-2023*, juillet 2022.
+4. `TSI 2.pdf` — *Progression 2022-2023*, juillet 2022.
+
+> **Note sur la diffusion :** ne pas republier les PDF sources sans vérifier les conditions de réutilisation. La licence de vos propres cours ne s'étend pas automatiquement aux documents ministériels.
