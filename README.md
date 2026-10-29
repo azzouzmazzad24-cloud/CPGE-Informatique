@@ -46,6 +46,11 @@ Enseignant d'informatique en Classes Préparatoires aux Grandes Écoles.
 
 Les ressources pédagogiques sont destinées à être diffusées sous licence Creative Commons Attribution 4.0 International (CC BY 4.0), sous réserve de l'ajout du fichier de licence correspondant.
 
+## Organisation pédagogique
+
+- [Programme d'informatique](docs/programme.md)
+- [Progression pédagogique](docs/progression-pedagogique.md)
+
 ---
 
 *Apprendre, comprendre, pratiquer et progresser.*
